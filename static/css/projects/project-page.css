@@ -1,0 +1,19 @@
+/* 하단 페이지 이동 CSS */
+.project-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 100px 60px;
+  color: black;
+}
+.project-page a {
+  color: black;
+}
+.project-page span {
+  font-size: 20px;
+}

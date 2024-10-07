@@ -1,0 +1,97 @@
+#project-edit-page {
+    margin-top: 200px;
+}
+
+.project-create {
+    display: flex;
+    margin-top: 200px;
+}
+
+.project-create__section form {
+    width: 80%;
+}
+
+.project-create__title {
+    display: flex;
+    justify-content: center;
+    font-size: 40px;
+    margin-right: 50px;
+}
+
+.project-field .input {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.project form {
+    display: flex;
+    justify-content: center;
+}
+
+.project-create__field {
+    margin-top: 30px;
+    width: 120%;
+}
+
+.project-create__field input {
+    background: #ffffff;
+    box-sizing: border-box;
+    border-radius: 4px;
+    height: 51px;
+    width: 50%;
+}
+
+.project-field input {
+    background-color: var(--search-box-bg, white);
+    border-radius: 30px;
+    color: var(--search-box-text);
+    font-family: inherit;
+    font-size: inherit;
+    height: 100%;
+    outline: none;
+    width: 80%;
+}
+
+.project-create__content {
+    display: flex;
+    margin-top: 40px;
+    width: 100%;
+}
+
+.project-create__section {
+    display: flex;
+}
+
+.project-button {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.project-create__button {
+    background: #ffffff;
+    border: 2px solid #000000;
+    box-sizing: border-box;
+    border-radius: 50px;
+    width: 100%;
+    height: 60px;
+    margin-top: 30px;
+}
+
+.project-create__section {
+    display: flex;
+}
+
+.project-create__section button {
+    display: inline-block;
+    width: 700px;
+    margin-right: 30px;
+}
+
+.project-create__section div {
+    margin-bottom: 20px;
+    font-size: 30px;
+    display: flex;
+    flex-direction: column;
+}
