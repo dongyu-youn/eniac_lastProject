@@ -55,7 +55,7 @@ ROOT_URLCONF = 'admin.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [BASE_DIR / 'templates'],  # 템플릿 경로 지정
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [

@@ -1,0 +1,32 @@
+<!-- templates/components/project_card.html -->
+<div class="project-cardlist__card">
+  {% if project.user == user %}
+  <a href="{% url 'project:delete' project.pk %}">
+    <i class="fas fa-trash fa-2x"></i>
+  </a>
+  {% endif %}
+  <div>
+    <img
+      class="project__img"
+      src="{{ project.get_photo_url }}"
+      alt="{{ project.title }}"
+    />
+  </div>
+  <div class="project-cardlist__text">
+    <div class="project-cardlist__subtext">
+      <span>{{ p.title | truncatechars:15 }}</span>
+      <p>{{ p.desc | truncatechars:35 }}</p>
+    </div>
+    <div class="project-cardlist__bottom">
+      <span class="project__user">{{ p.user }}</span>
+      <div class="project-card__button">
+        {% if p.user == user %}
+        <a href="{% url 'project:edit' project.id %}" class="btn-link block">
+          <button class="more">수정</button>
+        </a>
+        {% endif %}
+        <button class="more">자세히</button>
+      </div>
+    </div>
+  </div>
+</div>
