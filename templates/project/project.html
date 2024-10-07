@@ -4,8 +4,18 @@
 
 {% block content %}
 
+{% load static %}
+
+<head>
+    <link rel="stylesheet" href="css/styles.css" />
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" type="text/css" href="{% static 'css/project/project-create.css' %}">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+
+
 <body id="project-page">
-  <div id="Tab" style="height: 100%; position: relative">
+  <div id="Tab" style="height: 100%; position: relative" class="project">
     <!-- Project Menu -->
     {% include 'project/project__menu.html' %}
 
