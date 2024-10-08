@@ -16,9 +16,9 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path,include
+from . import views
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
-    path('',  include("projects.urls")),
-    path('notices/',  include("notice.urls")),
+    path('', views.notices, name='notice'),
+    path('<int:article_id>/', views.notice_detail, name='noticeDetail'),
 ]
