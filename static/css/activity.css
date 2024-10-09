@@ -1,0 +1,12 @@
+.con {
+    font-size: 30px;
+    padding: 10px;
+}
+
+.tab {
+    display: flex;
+}
+
+.con.is_on {
+    border-bottom: 1px solid black;
+}

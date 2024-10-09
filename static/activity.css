@@ -1,0 +1,27 @@
+.activity__hello {
+    font-size: 75px;
+}
+
+.con {
+    display: none;
+}
+
+input[type="radio"]:checked + label + .con {
+    display: block;
+}
+
+.tab label {
+    cursor: pointer;
+    padding: 10px;
+    background-color: #f1f1f1;
+    border: 1px solid #ddd;
+    margin-right: 5px;
+}
+
+.tab input[type="radio"] {
+    display: none;
+}
+
+.tab label:hover {
+    background-color: #ddd;
+}
